@@ -1,11 +1,12 @@
-import React from 'react';
-import { graphql, withPrefix, Link } from 'gatsby';
-import Helmet from 'react-helmet';
-import SEO from '../components/SEO';
-import Layout from '../layouts/index';
-import Call from '../components/Call';
-
-const Home = (props) => {
+import React from "react";
+import { graphql, withPrefix, Link } from "gatsby";
+import Helmet from "react-helmet";
+import SEO from "../components/SEO";
+import Layout from "../layouts/index";
+import Call from "../components/Call";
+import Card from "../components/blog-cards-snippet/blog-cards-snippet";
+import Flexboxcard from "../components/flexbox-card/flexbox-card";
+const Home = props => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
   return (
@@ -19,10 +20,10 @@ const Home = (props) => {
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Serif - Gatsby Small Business Theme.</h1>
+          <h1>Renforcez votre activité, équipez votre flotte</h1>
           <p>
-            Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This
-            is a beautiful and artfully designed starting theme.
+            Optez pour un système complet et puissant qui vous permettra de bien
+            gérer votre flotte
           </p>
         </div>
       </div>
@@ -30,18 +31,25 @@ const Home = (props) => {
       <div className="container pt-2">
         <Call button />
       </div>
+      <Card />
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
+          <Flexboxcard />
           <div className="col-12">
             <h2 className="title-3 text-dark mb-3">Our Services</h2>
           </div>
           {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+            <div
+              key={edge.node.frontmatter.path}
+              className="col-12 col-md-4 mb-1"
+            >
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h2>
-                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+                    <Link to={edge.node.frontmatter.path}>
+                      {edge.node.frontmatter.title}
+                    </Link>
                   </h2>
                   <p>{edge.node.excerpt}</p>
                 </div>
