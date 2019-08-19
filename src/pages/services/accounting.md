@@ -1,13 +1,11 @@
 ---
-path: '/services/accounting'
-title: 'Accounting'
+path: "/services/accounting"
+title: "Qualité de conduite"
 date: 2018-11-18T12:33:46+10:00
-image: 'services/noun_591323.png'
+image: "services/noun_591323.png"
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Mesurez la qualité de conduite de vos chauffeurs grâce à une panoplie d'indicateurs.
 
 ## Ne verba patulosque numen vix libet
 

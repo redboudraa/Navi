@@ -1,15 +1,13 @@
 ---
-path: '/services/mergers'
-title: 'Mergers'
+path: "/services/mergers"
+title: "Tracking en temps réel"
 date: 2018-11-28T15:15:34+10:00
-image: '/services/default.png'
+image: "/services/default.png"
 featured: true
 draft: false
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Suivez vos véhicules en temps réel et garantissez la sécurité de vos conducteurs
 
 ## Ne verba patulosque numen vix libet
 

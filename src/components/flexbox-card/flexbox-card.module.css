@@ -2,7 +2,7 @@
   display: inline-block;
   width: 50px;
   height: 5px;
-  background-color: #ff3434;
+  background-color: #213cd4;
   margin-bottom: 30px;
 }
 /* div.main {
@@ -27,7 +27,7 @@
 }
 .h1 {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 20px;
   margin: 0 0 15px;
 }
 .p {
@@ -38,7 +38,7 @@
 .a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #ff3434;
+  color: #213cd4;
   font-weight: bold;
   font-size: 14px;
   position: relative;
@@ -48,7 +48,7 @@
   left: -5px;
 }
 .a:hover {
-  color: #ff3434;
+  color: #213cd4;
 }
 .a::before {
   content: "";

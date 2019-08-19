@@ -6,6 +6,8 @@ import Layout from "../layouts/index";
 import Call from "../components/Call";
 import Card from "../components/blog-cards-snippet/blog-cards-snippet";
 import Flexboxcard from "../components/flexbox-card/flexbox-card";
+import logo1 from "../images/anis-kallel-1.jpg";
+import logo2 from "../images/latrace.jpg";
 const Home = props => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
@@ -35,9 +37,33 @@ const Home = props => {
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
-          <Flexboxcard />
+          <Flexboxcard
+            logo={logo1}
+            text="Des valeurs fortes sont au cœur de notre entreprise depuis sa
+          création. Elles guident nos actions au quotidien et constituent un
+          socle commun que l’ensemble des partenaires et des collaborateurs
+          Tunav partagent et s’engagent à respecter La vocation de Tunav n'est
+          pas de vendre un produit ou un service mais d'accompagner, d'être le
+          partenaire sur qui on peut compter et avec qui on gagne."
+            titre="Président Directeur Général Mr. Anis Kallel"
+          />
+          <br />
+          <br />
+
+          <Flexboxcard
+            logo={logo2}
+            text="LaTrace® est un système de Tracking par GPS/GPRS très complet qui dispose d'une large gamme de fonctionnalités permettant de gérer toute votre flotte de véhicules d'une manière facile et efficace.
+
+            Vous pouvez ainsi avoir une vision globale et détaillée des activités de tous vos véhicules et recevoir en temps réel toutes les informations nécessaires pour une meilleure gouvernance et une gestion intelligente."
+            titre="LaTrace®"
+          />
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-3">Our Services</h2>
+            <h2 className="title-3 text-dark mb-3">
+              <br />
+              <br />
+              <br />
+              Qu'est ce que LaTrace® peut vous fournir?
+            </h2>
           </div>
           {markdown.map(edge => (
             <div
@@ -58,7 +84,7 @@ const Home = props => {
           ))}
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
-              View All Services
+              Services
             </Link>
           </div>
         </div>
@@ -67,7 +93,7 @@ const Home = props => {
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-4">Our Features</h2>
+            <h2 className="title-3 text-dark mb-4">Nos packs</h2>
           </div>
           {json.map(edge => (
             <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
